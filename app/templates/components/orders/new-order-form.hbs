@@ -1,0 +1,14 @@
+<form {{action "handleSubmit" on="submit"}}>
+  {{input type="text" value=name}}
+  {{input type="number" value=price}}
+  <select onchange={{action "selectCategory" value="target.value"}}>
+    <option value="coffee">Coffee</option>
+    <option value="tea">Tea</option>
+  </select>
+  <select onchange={{action "selectSize" value="target.value"}}>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+  </select>
+  <button type="submit">Save</button>
+</form>
